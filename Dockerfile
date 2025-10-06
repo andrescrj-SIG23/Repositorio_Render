@@ -1,5 +1,5 @@
 # Usa la imagen oficial de Metabase (ajusta la versión si es diferente)
-FROM metabase/metabase:v0.50.0
+FROM metabase/metabase:v0.56.8
 
 # Copia el archivo de la base de datos H2 al directorio donde Metabase lo espera
 COPY metabase.db.mv.db /app/metabase.db.mv.db
