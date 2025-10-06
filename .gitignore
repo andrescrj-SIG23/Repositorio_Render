@@ -1,0 +1,4 @@
+# Ignorar archivos temporales o no deseados
+*.log
+*.tmp
+*.db.trace.db
