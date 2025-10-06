@@ -1,5 +1,8 @@
-# Usa la imagen oficial de Metabase (ajusta la versión si es diferente)
+# Usa la imagen oficial de Metabase 
 FROM metabase/metabase:v0.56.8
+
+# Crea un directorio para la base de datos (si usas un volumen persistente)
+RUN mkdir -p /app/data
 
 # Copia el archivo de la base de datos H2 al directorio donde Metabase lo espera
 COPY metabase.db.mv.db /app/metabase.db.mv.db
